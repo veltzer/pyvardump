@@ -12,7 +12,6 @@ setuptools.setup(
     version="0.0.1",
     packages=[
         'pyvardump',
-        'pyvardump.endpoints',
     ],
     # from here all is optional
     description="pyvardump helps you dump variables in python",
