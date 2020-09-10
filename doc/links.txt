@@ -1,0 +1,1 @@
+https://github.com/sha256/python-var-dump/blob/master/var_dump/_var_dump.py
