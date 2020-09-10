@@ -4,4 +4,5 @@ This is the main code
 
 
 def dump(obj):
-    pass
+    print(obj)
+
