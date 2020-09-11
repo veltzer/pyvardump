@@ -1,4 +1,4 @@
-The reason for this module is that other dumping solutionis cannot easily be used
+The reason for this module is that other dumping solutions cannot easily be used
 everywhere.
 
 These solutions usually get stuck on AttributeError or TypeError, fail to list
