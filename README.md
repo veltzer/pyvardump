@@ -16,6 +16,8 @@
 ![Downloads](https://pepy.tech/badge/pyvardump/month)
 ![Downloads](https://pepy.tech/badge/pyvardump/week)
 
+[![Known Vulnerabilities](https://snyk.io/test/github/veltzer/pyvardump/badge.svg?targetFile=requirements.txt)](https://snyk.io/test/github/veltzer/pyvardump?targetFile=requirements.txt)
+
 
 
 pyvardump helps you dump variables in python
