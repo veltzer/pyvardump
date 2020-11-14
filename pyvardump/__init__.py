@@ -1,3 +1,5 @@
 from pyvardump.dump import (
-        dump
+        dump_print,
+        dump_pprint,
+        dump_json,
 )

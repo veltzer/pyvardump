@@ -3,10 +3,15 @@ This is the main code
 """
 import json
 import sys
+from pprint import pprint
 
 
-def dump(obj):
+def dump_print(obj):
     print(obj)
+
+
+def dump_pprint(obj):
+    pprint(obj)
 
 
 def dump_obj(obj, level=0):
