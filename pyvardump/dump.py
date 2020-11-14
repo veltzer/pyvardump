@@ -25,9 +25,9 @@ def dump_obj(obj, level=0):
             val = getattr(obj, a)
             # print(type(val))
             if type(val) in {int, float, str, list, dict, set}:
-                print(level*' ', val)
+                print(level * ' ', val)
             else:
-                dump_obj(val, level=level+1)
+                dump_obj(val, level=level + 1)
     except TypeError:
         print(str(type(obj)))
     except AttributeError:
@@ -84,4 +84,3 @@ def flat_dump(obj) -> None:
             print(f"{x} -> {v}")
     except TypeError:
         print("Cannot flat_dump")
-
