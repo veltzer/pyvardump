@@ -13,9 +13,6 @@
 
 ![Code style: black](https://img.shields.io/badge/code%20style-black-000000.svg)
 
-
-Actions
-
 ![build](https://github.com/veltzer/pyvardump/workflows/build/badge.svg)
 
 pyvardump helps you dump variables in python
