@@ -38,7 +38,7 @@ def dump_obj_2(obj, level=0):
     if hasattr(obj, '__dict__'):
         for key, value in obj.__dict__.items():
             if isinstance(value, (int, float, str, list, dict, set)):
-                print(" " * level + "%s -> %s" % (key, value))
+                print(" " * level + f"{key} -> {value}")
             else:
                 dump_obj_2(value, level + 2)
 
