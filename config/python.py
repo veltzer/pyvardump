@@ -1,8 +1,11 @@
 dev_requires = [
-    "pyclassifiers",
     "pypitools",
+]
+make_requires = [
+    "pyclassifiers",
     "pydmt",
     "Sphinx",
+    "pymakehelper",
 ]
 test_requires = [
     "pylint",
@@ -10,6 +13,5 @@ test_requires = [
     "pytest-cov",
     "pyflakes",
     "flake8",
-    "pymakehelper",
     "mypy",
 ]
