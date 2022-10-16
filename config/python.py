@@ -4,7 +4,6 @@ dev_requires = [
 make_requires = [
     "pyclassifiers",
     "pydmt",
-    "sphinx",
     "pymakehelper",
 ]
 test_requires = [
