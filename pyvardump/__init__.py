@@ -1,3 +1,7 @@
+"""
+Initialize the module
+"""
+
 from pyvardump.dump import (  # noqa F401
     dump_print,
     dump_pprint,
