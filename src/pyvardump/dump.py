@@ -25,7 +25,7 @@ def dump_obj(obj, level=0):
             val = getattr(obj, a)
             # print(type(val))
             if type(val) in {int, float, str, list, dict, set}:
-                print(level * ' ', val)
+                print(level * " ", val)
             else:
                 dump_obj(val, level=level + 1)
     except TypeError:
@@ -35,7 +35,7 @@ def dump_obj(obj, level=0):
 
 
 def dump_obj_2(obj, level=0):
-    if hasattr(obj, '__dict__'):
+    if hasattr(obj, "__dict__"):
         for key, value in obj.__dict__.items():
             if isinstance(value, (int, float, str, list, dict, set)):
                 print(" " * level + f"{key} -> {value}")
