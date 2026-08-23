@@ -32,6 +32,16 @@ version: 0.0.5
 ![PyPI - Downloads](https://img.shields.io/pypi/dw/pyvardump)
 ![PyPI - Downloads](https://img.shields.io/pypi/dm/pyvardump)
 
+The reason for this module is that other dumping solutions cannot easily be used
+everywhere.
+
+These solutions usually get stuck on AttributeError or TypeError, fail to list
+slots or attributes etc.
+
+I hope to overcome all of these.
+
+This module just exports one function "dump".
+
 ## contact me
 
 [mailto](mailto:mark.veltzer@gmail.com)
