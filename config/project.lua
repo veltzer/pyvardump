@@ -4,3 +4,4 @@ KEYWORDS = {
     "dump",
     "json",
 }
+PYPI = true
