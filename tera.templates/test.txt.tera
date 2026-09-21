@@ -1,0 +1,5 @@
+{% if glob(pattern="Cargo.toml") | length > 0 %}
+has cargo
+{% else %}
+no cargo
+{% endif %}
