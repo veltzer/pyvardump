@@ -5,7 +5,7 @@
 
 description: pyvardump helps you dump variables in python
 
-project website: https://veltzer.github.io/pyvardump
+project website: <https://veltzer.github.io/pyvardump>
 
 author: Mark Veltzer
 
