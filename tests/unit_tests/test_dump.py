@@ -14,24 +14,24 @@ class Sample:
 class ObjectToMembersOrStringTests(unittest.TestCase):
     def test_object_with_dict_returns_vars(self):
         obj = Sample()
-        self.assertEqual(dump.object_to_members_or_string(obj), {"a": 1, "b": "two"})
+        assert dump.object_to_members_or_string(obj) == {"a": 1, "b": "two"}
 
     def test_int_without_dict_returns_string(self):
-        self.assertEqual(dump.object_to_members_or_string(5), "5")
+        assert dump.object_to_members_or_string(5) == "5"
 
     def test_string_without_dict_returns_string(self):
-        self.assertEqual(dump.object_to_members_or_string("hello"), "hello")
+        assert dump.object_to_members_or_string("hello") == "hello"
 
     def test_none_returns_string(self):
-        self.assertEqual(dump.object_to_members_or_string(None), "None")
+        assert dump.object_to_members_or_string(None) == "None"
 
 
 class DefaultFuncTests(unittest.TestCase):
     def test_default_func_returns_dir_listing(self):
         result = dump.default_func(Sample())
-        self.assertIn("a", result)
-        self.assertIn("b", result)
+        assert "a" in result
+        assert "b" in result
 
     def test_default_func_on_int_returns_dir(self):
         # ints have a dir(), so the listing (not the type string) comes back
-        self.assertIn("bit_length", dump.default_func(5))
+        assert "bit_length" in dump.default_func(5)
