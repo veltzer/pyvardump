@@ -9,7 +9,7 @@ project website: <https://veltzer.github.io/pyvardump>
 
 author: Mark Veltzer
 
-version: 0.0.5
+version: 0.0.6
 
 ## github
 
