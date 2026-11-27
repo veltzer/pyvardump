@@ -17,13 +17,11 @@ def dump_pprint(obj):
 def dump_obj(obj, level=0):
     try:
         for a in dir(obj):
-            # print(a)
             if a.startswith("_"):
                 continue
             if a in {"adjustments", "auto_shape_type"}:
                 continue
             val = getattr(obj, a)
-            # print(type(val))
             if type(val) in {int, float, str, list, dict, set}:
                 print(level * " ", val)
             else:
@@ -46,7 +44,6 @@ def dump_obj_2(obj, level=0):
 def default_func(obj):
     try:
         return dir(obj)
-        # return obj.__dict__
     except TypeError:
         return str(type(obj))
     except AttributeError:
@@ -54,7 +51,6 @@ def default_func(obj):
 
 
 def dump_json(obj):
-    # json.dump(obj, fp=sys.stdout, indent=2, default=default_func)
     json.dump(obj, fp=sys.stdout, indent=2)
 
 
