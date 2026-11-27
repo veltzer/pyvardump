@@ -6,32 +6,32 @@ from pyvardump import dump
 
 
 class Sample:
-    def __init__(self):
+    def __init__(self) -> None:
         self.a = 1
         self.b = "two"
 
 
 class ObjectToMembersOrStringTests(unittest.TestCase):
-    def test_object_with_dict_returns_vars(self):
+    def test_object_with_dict_returns_vars(self) -> None:
         obj = Sample()
         assert dump.object_to_members_or_string(obj) == {"a": 1, "b": "two"}
 
-    def test_int_without_dict_returns_string(self):
+    def test_int_without_dict_returns_string(self) -> None:
         assert dump.object_to_members_or_string(5) == "5"
 
-    def test_string_without_dict_returns_string(self):
+    def test_string_without_dict_returns_string(self) -> None:
         assert dump.object_to_members_or_string("hello") == "hello"
 
-    def test_none_returns_string(self):
+    def test_none_returns_string(self) -> None:
         assert dump.object_to_members_or_string(None) == "None"
 
 
 class DefaultFuncTests(unittest.TestCase):
-    def test_default_func_returns_dir_listing(self):
+    def test_default_func_returns_dir_listing(self) -> None:
         result = dump.default_func(Sample())
         assert "a" in result
         assert "b" in result
 
-    def test_default_func_on_int_returns_dir(self):
+    def test_default_func_on_int_returns_dir(self) -> None:
         # ints have a dir(), so the listing (not the type string) comes back
         assert "bit_length" in dump.default_func(5)
